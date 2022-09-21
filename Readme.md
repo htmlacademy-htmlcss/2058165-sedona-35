@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Natalie Raevskaya](https://up.htmlacademy.ru/htmlcss/35/user/2058165).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Романков](https://htmlacademy.ru/profile/rsvp).
 
 ---
 
