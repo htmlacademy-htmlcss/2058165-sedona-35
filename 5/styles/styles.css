@@ -1,0 +1,418 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif; 
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* buttons */
+
+.button {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: сenter;
+    border: none;
+}
+
+.button-small {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button-brown {
+    background-color: #756157;
+}
+
+.button-blue {
+    background-color: #82B3D3;
+}
+
+/* lists */
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    list-style: none;
+}
+
+/* hidden */
+
+.visually-hidden {
+    display: none;
+}
+
+/* header */
+
+.page-header {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-wrapper {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    width: 550px;
+}
+
+.navigation-user {
+    width: 250px;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigation-button {
+    color: #ffffff;
+}
+
+/* main */
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-index {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.main-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: #82B3D3 url("../images/hero-background.jpg") center no-repeat;
+}
+
+/* titles */
+
+.title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* descriptions */
+
+.section-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* advantages-and-services */
+
+.advantages-list { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list {
+    display: flex;
+}
+
+.advantages-item, 
+.services-item {
+    flex-basis: 230px;
+    padding: 0 85px;
+}
+
+.advantages-item-big  {
+    padding: 0;
+    flex-grow: 1;
+}
+
+.photo {
+    display: block;
+}
+
+.advantages-item-bright-blue {
+    background-color: #82B3D3;
+    color: #ffffff;
+} 
+
+.advantages-item-light-blue {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-blue {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.services-item-blue {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* search */
+
+.search {
+    padding: 0 304px;
+}
+
+.search-link {
+    text-decoration: none;
+}
+
+/* subscribe */
+
+.subscribe-index {
+    background: #82B3D3 url("../images/subscribe-background.jpg") center no-repeat;
+    color: #ffffff;
+}
+
+.subscribe-inner {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.subscribe-field {
+    background-color: #F2F2F2;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.input-field {
+    border: none;
+}
+
+/* footer */
+
+.page-footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list {
+    display: flex;
+    width: 142px;
+    justify-content: space-around;
+}
+
+.footer-contacts-phone-link {
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* catalog-nav-filters*/
+
+.main-inner {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* breadcrumbs */
+
+.nav-and-filter-wrap {
+    background: #82B3D3 url("../images/catalog/catalog-background.jpg") center no-repeat;
+    color: #ffffff;
+}
+
+.navigation-catalog-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+
+    padding: 0 565px 0 70px;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding: 0 1016px 0 70px;
+}
+
+.breadcrumbs-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* filters */
+
+.catalog-filters {
+    display: flex;
+    padding: 0 70px;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-filter-group {
+    border: none;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.price-control-input {
+    background-color: #F2F2F2;
+    color: #000000;
+    line-height: 24px;
+}
+
+.reset-button {
+    background-color: rgba(225, 225, 225, 0);
+}
+
+/* sorting */
+
+.filter-result {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sorting-wrap {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.sort-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    padding: 0 70px;
+}
+
+/* product-list */
+
+.product-card {
+    background-color: #ffffff;
+    flex-basis: 300px;
+    padding: 0 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1060px;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.product-card-price {
+    font-weight: 400;
+}
+
+.details-button {
+    text-decoration: none;
+}
+
+.rating-button {
+    color: #333333;
+    background-color: #F2F2F2;
+    font-weight: 400;
+}
+
+/* pagination */
+
+.pagination-link {
+    color: #ffffff;
+    background-color: #82B3D3;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    
+    padding: 0 24px;
+}
+
+.pagination-link-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.pagination {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
