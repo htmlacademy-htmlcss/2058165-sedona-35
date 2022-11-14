@@ -73,49 +73,76 @@
                       <legend class="catalog-filter-title">Инфраструктура:</legend>
                       <ul class="catalog-filter-list list">
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="checkbox" name="swimmingpool" checked>Бассейн
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Бассейн</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Парковка</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Wi-Fi</span>
                           </label>
                         </li>
                       </ul> 
                     </fieldset>
                     <fieldset class="catalog-filter-group">
-                      <legend class="catalog-filter-title">Тип жилья:</legend>
+                      <legend class="catalog-filter-title">Тип Жилья:</legend>
                       <ul class="catalog-filter-list list">
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="radio" name="house-type" value="hotel" checked>Гостиница
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="house-type" value="hotel" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Гостиница</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="radio" name="house-type" value="motel">Мотель
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="house-type" value="motel">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Мотель</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item list-item">
-                          <label class="controls">
-                            <input class="control-input" type="radio" name="house-type" value="appartment">Апартаменты
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="house-type" value="appartment">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Апартаменты</span>
                           </label>
                         </li>
                       </ul>
                     </fieldset>
                     <fieldset class="catalog-filter-group">
-                      <legend class="catalog-filter-title">Стоимость, ₽:</legend>  
+                      <legend class="catalog-filter-title">Стоимость, ₽:</legend> 
                       <div class="price-control">
-                        <input class="price-control-input input-field" type="text" name="price-control-min" placeholder="0">
-                        <input class="price-control-input input-field" type="text" name="price-control-max" placeholder="9000">
+                        <div class="range-inputs-wrap">
+                          <label class="catalog-filter-label">
+                            <input class="range-input range-input-min input-field" type="text" name="range-min" placeholder="0">
+                          </label>
+                          <label class="catalog-filter-label">
+                            <input class="range-input range-input-max input-field" type="text" name="range-max" placeholder="9000">
+                          </label>
+                        </div>
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 1px; width: 226px">
+                            <button class="range-toggle toggle-min">
+                              <span class="visually-hidden">Изменить минимальную цену.</span>
+                            </button>
+                            <button class="range-toggle toggle-max">
+                              <span class="visually-hidden">Изменить максимальную цену.</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <input class="price-control-range" type="range" min="0" max="9000" id="pricecount" step="10">
                     </fieldset>
                     <div class="buttons">
                       <button class="submit-button button button-small button-blue" type="submit">Применить</button>

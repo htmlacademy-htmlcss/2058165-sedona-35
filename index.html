@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="all-wrapper">
       <header class="page-header">
         <div class="header-wrapper">
           <a class="page-header-logo-link" href="index.html">
@@ -158,6 +157,36 @@
           </section> 
         </div>
       </footer>
-    </div>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-reservation">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
+            <form class="reservation-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group check-in-date">
+                <label class="field-group-title" for="check-in-date">Дата заезда:</label>
+                <input class="reservation-form-input check-in-date-field reservation-date-input-field" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+              </p>
+              <p class="field-group check-out-date">
+                <label class="field-group-title" for="check-out-date">Дата выезда:</label>
+                <input class="reservation-form-input check-out-date-field reservation-date-input-field" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2023">
+              </p>
+              <div class="number-of-guests">
+                <p class="field-group number-of-adults-group">
+                  <label class="field-group-title" for="adults">Взрослые:</label>
+                  <input class="reservation-form-input number-of-guests-input number-of-adults-field number-of-guests-input-field" type="number" id="adults" name="number-of-adults" placeholder="2">
+                </p>
+                <p class="field-group number-of-children-group">
+                  <label class="field-group-title" for="children">Дети:</label>
+                  <input class="reservation-form-input number-of-guests-input number-of-children-field number-of-guests-input-field" type="number" id="children" name="number-of-children" placeholder="2">
+                </p>
+              </div>
+              <a class="reservation-search-link button button-big button-blue" href="catalog.html">Найти</a>
+            </form>
+          </section>
+        </div>
+      </div>
   </body>
 </html>
