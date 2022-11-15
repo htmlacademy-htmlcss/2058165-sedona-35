@@ -194,7 +194,7 @@ body {
 
 .navigation-link.navigation-button {
   box-sizing: border-box;
-  width: 160px;
+  min-width: 160px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
@@ -300,11 +300,9 @@ body {
   margin: 0 auto;
 }
 
-.hero-wrap {
-  padding-top: 69px;
-}
-
 .hero-title {
+  width: 620px;
+  margin: 69px auto 141px;
   margin-bottom: 25px;
 }
 
@@ -415,12 +413,17 @@ body {
 }
 
 .search-link {
+  display: block;
+  box-sizing: border-box;
   padding: 8px 50px;
   text-decoration: none;
+  
 }
 
 .search-link-wrap {
-  margin-bottom: 96px;
+  width: 376px;
+  height: 52px;
+  margin: 0 auto 96px;
 }
 
 .search-title, 
@@ -595,6 +598,8 @@ body {
   margin-bottom: 64px;
 }
 
+/* modal-close-button */
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -609,6 +614,34 @@ body {
   background: #F2F2F2 url("../images/icons/close-icon.svg") center no-repeat;
   cursor: pointer;
 } 
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+  color: rgba(0, 0, 0, 0.1);
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  color: #000000;
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+/* reservation-form */
+
+.reservation-form {
+  position: relative;
+}
+
+.field-group {
+  margin: 0;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .field-group-title {
   font-size: 20px;
@@ -630,9 +663,26 @@ body {
   padding: 12px 20px;
 }
 
-.field-group {
-  display: flex;
-  justify-content: space-between;
+.reservation-form-input-description {
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 20px;
+}
+
+.check-in-date {
+  position: relative;
+}
+
+.check-in-date-field-description {
+  color: #FF5757;
+  top: 35px;
+  left: 137px;
+}
+
+.check-out-date-field-description {
+  top: 132px;
+  left: 137px;
 }
 
 .number-of-guests {
@@ -647,17 +697,18 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 14px auto;
-  text-align: center;
+  padding: 14px 10px;
+  border-radius: 0;
 }
 
 .reservation-search-link {
   display: block;
   box-sizing: border-box;
+  height: 60px;
   padding: 18px 256px;
   text-decoration: none;
   border-radius: 10px;
-  align-self: center;
+  line-height: 24px;
 }
 
 .reservation-date-input-field {
@@ -669,22 +720,107 @@ body {
 }
 
 .number-of-guests-input-field {
-  width: 110px;
+  width: 31px;
 }
 
 .number-of-adults-group {
   width: 247px;
- 
 }
 
-.field-group {
-  
+/* buttons */
+
+.number-of-guests-control {
+  flex-grow: 1;
+  border: none;
+  color: rgba(117, 97, 87, 0.3);
+  cursor: pointer;
+}
+
+.minus-button {
+  border-radius: 4px 0 0 4px;
+  padding: 14px 10px;
+}
+
+.plus-button {
+  border-radius: 0 4px 4px 0;
+  padding: 14px 9px;
+  display: block;
+}
+
+.reservation-form-button:hover {
+  color: #000000;
+}
+
+.reservation-form-button:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.reservation-form-button:focus {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  color: #000000;
+  z-index: 1;
+}
+
+/* tooltip */
+
+.tooltip {
+  position: absolute;
+  right: 157px;
+  top: 203px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
   margin: 0;
-  margin-bottom: 48px;
+  padding: 7px 12px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: block;
 }
 
-.number-of-guests {
-  
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  display: block;
+}
+
+.tooltip-text {
+  background: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  width: 256px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 39px;
+  left: -113px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.tooltip-text:before {
+  position: absolute;
+  top: -17px;
+  left: 117px;
+  content: "";
+  background-color: transparent;
+  border: 9px solid transparent;
+  border-bottom: 9px solid rgb(51, 51, 51);
+  display: block;
+  width: 0;
+  height: 0;
 }
 
 /* catalog-nav-filters*/
@@ -838,7 +974,7 @@ body {
 }
 
 .control-input[type="checkbox"]:focus + .control-mark {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -852,12 +988,12 @@ body {
 }
 
 .control-input[type="radio"]:focus + .control-mark {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .control:active .control-mark {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px; 
 }
@@ -933,12 +1069,12 @@ body {
   border: none;
 }
 
-.rangel-input:focus {
+.range-input:focus {
   border: 3px solid #83B3D3;
 }
 
 .range-input:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .range-scale {
@@ -991,6 +1127,7 @@ body {
 }
 
 .reset-button {
+  line-height: 20px;
   width: 191px;
   background-color: rgba(225, 225, 225, 0);
   padding: 8px 57px;
@@ -1001,7 +1138,7 @@ body {
 }
 
 .reset-button:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 /* sorting */
@@ -1025,20 +1162,21 @@ body {
   box-sizing: border-box;
   width: 292px;
   height: 49px;
-  border: 2px solid #E5E5E5;
+  border: none;
+  outline: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   font: inherit;
   font-size: 18px;
   line-height: 21px;
 }
 
 .select-item:hover {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .select-item:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .select-item:active {
