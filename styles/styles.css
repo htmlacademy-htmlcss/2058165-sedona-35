@@ -619,8 +619,9 @@ body {
 
 .modal {
   position: absolute;
-  top: 396px;
-  left: 281px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
@@ -646,11 +647,12 @@ body {
   right: 52px;
   width: 52px;
   height: 52px;
+  box-sizing: border-box;
   border: none;
   border-radius: 50%;
   padding: 19px;
+  background-color: #F2F2F2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #F2F2F2 url("../images/icons/close-icon.svg") center no-repeat;
   cursor: pointer;
 } 
 
