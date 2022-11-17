@@ -660,9 +660,16 @@ body {
   background-color: #E6E6E6;
 }
 
+.modal-close-button-icon {
+  color: #000000;
+}
+
 .modal-close-button:active {
-  color: rgba(0, 0, 0, 0.1);
   background-color: #E6E6E6;
+}
+
+.modal-close-button-icon:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .modal-close-button:focus {
